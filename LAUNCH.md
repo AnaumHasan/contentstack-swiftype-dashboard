@@ -17,7 +17,7 @@ Use these settings when creating the project in Contentstack Launch.
 - Server command: leave blank
 - Node.js version: `22`
 
-This is a Vite client-side dashboard. The Swiftype token is not needed in Launch because the UI reads generated JSON files from `public/data`. The daily GitHub Actions workflow fetches Swiftype analytics and commits updated JSON back to the repository.
+The Launch build creates a static dashboard in `dist` with `node scripts/build-static.mjs`. The Swiftype token is not needed in Launch because the UI reads generated JSON files from `public/data`. The daily GitHub Actions workflow fetches Swiftype analytics and commits updated JSON back to the repository.
 
 ## Required Secret
 
