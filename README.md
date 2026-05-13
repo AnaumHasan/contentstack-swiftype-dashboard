@@ -58,3 +58,5 @@ The workflow in `.github/workflows/update-swiftype-data.yml` can refresh the dat
 For Contentstack Launch, deploy the static Vite build output from `dist`. The dashboard is static after data generation, so the scheduled GitHub Action can keep `public/data/swiftype-search.json` fresh before each deployment.
 
 The Swiftype auth token should stay server-side in GitHub Actions or the deployment environment. The browser UI only reads generated JSON files and does not expose the token.
+
+See `LAUNCH.md` for the exact Launch project settings.
