@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-05-13T10:30:00.000Z",
+  "source": {
+    "engine": "contentstack-documentation",
+    "startDate": "2026-05-01",
+    "endDate": "2026-05-13",
+    "perPage": 100
+  },
+  "summary": {
+    "totalTrackedQueries": 10,
+    "totalSearches": 1003,
+    "totalNoResults": 38,
+    "queriesNeedingReview": 5
+  },
+  "topQueries": [
+    { "query": "support request", "count": 322 },
+    { "query": "support request details", "count": 153 },
+    { "query": "contact support", "count": 129 },
+    { "query": "support", "count": 106 },
+    { "query": "support ticket", "count": 72 },
+    { "query": "webhooks", "count": 61 }
+  ],
+  "noResultQueries": [
+    { "query": "interstackplugin", "count": 15 },
+    { "query": "ebsco", "count": 9 },
+    { "query": "cannonical", "count": 2 },
+    { "query": "contet", "count": 2 },
+    { "query": "mangemnt", "count": 2 }
+  ],
+  "combined": [
+    { "query": "interstackplugin", "searches": 15, "noResults": 15, "zeroResultRate": 1, "status": "Needs review" },
+    { "query": "ebsco", "searches": 9, "noResults": 9, "zeroResultRate": 1, "status": "Needs review" },
+    { "query": "cannonical", "searches": 0, "noResults": 2, "zeroResultRate": 1, "status": "Needs review" },
+    { "query": "contet", "searches": 0, "noResults": 2, "zeroResultRate": 1, "status": "Needs review" },
+    { "query": "mangemnt", "searches": 0, "noResults": 2, "zeroResultRate": 1, "status": "Needs review" },
+    { "query": "support request", "searches": 322, "noResults": 0, "zeroResultRate": 0, "status": "Healthy" },
+    { "query": "support request details", "searches": 153, "noResults": 0, "zeroResultRate": 0, "status": "Healthy" },
+    { "query": "contact support", "searches": 129, "noResults": 0, "zeroResultRate": 0, "status": "Healthy" },
+    { "query": "support", "searches": 106, "noResults": 0, "zeroResultRate": 0, "status": "Healthy" },
+    { "query": "webhooks", "searches": 61, "noResults": 0, "zeroResultRate": 0, "status": "Healthy" }
+  ]
+}
