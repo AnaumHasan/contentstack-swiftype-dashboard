@@ -11,7 +11,8 @@ Use these settings when creating the project in Contentstack Launch.
 ## Build And Output Settings
 
 - Framework preset: `Other` or `CSR`
-- Install/build command: `npm install && npm run build`
+- Install command: `npm install`
+- Build command: `npm run build`
 - Output directory: `dist`
 - Server command: leave blank
 - Node.js version: `22`
