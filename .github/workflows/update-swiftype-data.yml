@@ -1,0 +1,38 @@
+name: Update Swiftype Analytics
+
+on:
+  workflow_dispatch:
+    inputs:
+      start_date:
+        description: Start date in YYYY-MM-DD format
+        required: false
+      end_date:
+        description: End date in YYYY-MM-DD format
+        required: false
+  schedule:
+    - cron: '15 3 * * 1'
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm install
+      - name: Fetch Swiftype analytics
+        env:
+          SWIFTYPE_AUTH_TOKEN: ${{ secrets.SWIFTYPE_AUTH_TOKEN }}
+          SWIFTYPE_START_DATE: ${{ inputs.start_date }}
+          SWIFTYPE_END_DATE: ${{ inputs.end_date }}
+        run: npm run fetch:swiftype
+      - name: Commit updated analytics
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update Swiftype analytics data
+          file_pattern: public/data/*.json public/data/archive/*.json
